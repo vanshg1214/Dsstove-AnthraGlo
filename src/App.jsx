@@ -5,7 +5,7 @@ export default function App() {
 
   return (
     <div className="app-container">
-      <h1 className="title">ANTHRA GLO</h1>
+      <h1 className="title">Dsstove-AnthraGlo</h1>
       
       <div className="viewer-wrapper">
         <model-viewer
