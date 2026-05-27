@@ -85,4 +85,51 @@ body {
   color: #888888; /* Completely grey */
 }
 
+#ar-button {
+  background: linear-gradient(135deg, #ff7b00 0%, #ff4500 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  padding: 12px 24px;
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(0.85rem, 2.5vw, 0.95rem);
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  box-shadow: 0 8px 24px rgba(255, 69, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+  outline: none;
+}
+
+#ar-button:hover {
+  transform: translateX(-50%) scale(1.05);
+  background: linear-gradient(135deg, #ff8c1a 0%, #ff551a 100%);
+  box-shadow: 0 12px 30px rgba(255, 69, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+#ar-button:active {
+  transform: translateX(-50%) scale(0.96);
+  background: linear-gradient(135deg, #e66f00 0%, #e63e00 100%);
+  box-shadow: 0 4px 12px rgba(255, 69, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+#ar-button .ar-icon {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
 
